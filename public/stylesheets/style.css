@@ -21,6 +21,17 @@ body, html {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+  color: #225ca3;
+  font-weight: bold;
+  transition: color .1s;
+}
+
+a:hover {
+  color: #3486eb;
+}
+
 h1,
 h2,
 h3,
@@ -110,6 +121,11 @@ button:hover {
   display: inline-block;
   border-radius: var(--border-radius);
   box-shadow: 6px 5px var(--light-dark);
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
 }
 
 .list-group {
