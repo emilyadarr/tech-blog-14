@@ -23,13 +23,21 @@ body, html {
 
 a {
   text-decoration: none;
-  color: #225ca3;
-  font-weight: bold;
+  color: var(--dark);
   transition: color .1s;
 }
 
 a:hover {
-  color: #3486eb;
+  color: var(--light-dark);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -53,11 +61,10 @@ p {
   font-size: 1.2rem;
 }
 
-button {
+/* button {
   font-size: 1.3rem;
   text-decoration:none;
   padding: 6px 5px;
-  width: 100%;
   display: block;
   margin: 5px 0;
   border-radius: var(--border-radius);
@@ -67,6 +74,22 @@ button {
   background-color: var(--light-dark);
   box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
+} */
+button {
+  border-radius: var(--border-radius);
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--light-dark);
+  box-shadow: 3px 3px var(--secondary);
+  transform: translate(-1px, -1px);
+  display: inline-block;
+  width: auto;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 button:hover {
@@ -91,7 +114,7 @@ button:hover {
   display: inline-block;
   width: auto;
   margin-top: 20px;
-  padding: 15px;
+  padding: 6px;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -156,7 +179,7 @@ button:hover {
 .card-header {
   color: var(--primary);
   background-color: var(--dark);
-  padding: 2.5%;
+  padding: 2%;
   border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
 }
 
@@ -177,8 +200,6 @@ button:hover {
 }
 
 .form-input {
-  width: 100%;
-  padding: 3%;
   margin: 5px 0;
   font-size: 1.2rem;
   border: 2px solid var(--light-dark);
