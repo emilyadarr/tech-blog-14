@@ -1,0 +1,17 @@
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="btn-back">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<a class="btn-back" href="/dashboard/create">Create a New Post</a>
+
+{{!-- TODO: Update how these posts are shown on dashboard and add edit and delete functionality --}}

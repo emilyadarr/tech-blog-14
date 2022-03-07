@@ -216,7 +216,7 @@ button:hover {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: var(--secondary);
 }
 
 .comment .meta {
