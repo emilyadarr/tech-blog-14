@@ -5,6 +5,8 @@ CMS-style blog site similar to a Wordpress site, where developers can publish th
 
 [Deployed on Heroku](https://murmuring-cove-46557.herokuapp.com/)
 
+![image](https://github.com/emilyadarr/tech-blog-14/blob/1e767690dc442e9189be197cf2ac0b1f08ef1a86/img/tech-blog-screenshot.png)
+
 ## Questions
 [emilyadarr](https://github.com/emilyadarr)
 <emilyadarr@gmail.com>
